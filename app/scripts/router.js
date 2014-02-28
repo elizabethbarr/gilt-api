@@ -13,8 +13,10 @@ var MainRouter = Backbone.Router.extend({
  
   showShops: function(keyword){
     if (keyword) {
-      this.items.url = "https://api.etsy.com/v2/listings/active.js?keywords="+ keyword +"&includes=Images&api_key=kr9rjq7dc9c24jv6fccq2hus&callback=?"
+      this.items.url = "https://api.gilt.com/v1/sales/upcoming.json?keywords="+ keyword +"&includes=Images&api_key=24531d757413e8ccfd99762705d68ebf&callback=?"
     }
     this.items.fetch();
   }
 });
+
+

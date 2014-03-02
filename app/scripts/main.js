@@ -1,6 +1,3 @@
-console.log('Shop on Gilt!');
-
-
 console.log('A Gilt app!');
 
 $(document).ready(function(){
